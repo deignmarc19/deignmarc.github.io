@@ -84,21 +84,27 @@
     </div>
 
     <!-- Contact Section -->
-    <div class="contact">
+   <div class="contact">
       <h2>Contact Me</h2>
-      <form>
+
+      <!-- Only replace the form tag! -->
+      <form action="https://formspree.io/f/mqewonge" 
+      method="POST">
+
         <label>Your Name:</label><br>
-        <input type="text"
+        <input type="text" name="name"
         placeholder="Enter your name"><br><br>
 
         <label>Your Email:</label><br>
-        <input type="email"
+        <input type="email" name="email"
         placeholder="Enter your email"><br><br>
 
         <label>Your Message:</label><br>
-        <textarea placeholder="Write your message here"></textarea><br><br>
+        <textarea name="message" 
+        placeholder="Write your message here"></textarea><br><br>
 
-        <button>Send Message</button>
+        <button type="submit">Send Message</button>
+
       </form>
     </div>
 
