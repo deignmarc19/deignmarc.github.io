@@ -7,10 +7,9 @@
   <body>
 
     <div class="navbar">
-      <div class="navbar-logo">
-        ⛪ My Website
-      </div>
-      <div class="navbar-links">
+      <div class="navbar-logo">⛪ My Website</div>
+      <button class="hamburger" id="hamburger">☰</button>
+      <div class="navbar-links" id="navLinks">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html" class="active">Projects</a>
@@ -19,56 +18,52 @@
     </div>
 
     <div class="hero">
-  <div class="hero-text">
-    <h3>Hello, I am</h3>
-    <h1>Deign Marc M. Dela Torre</h1>
-    <h3>Aspiring Web Designer & Developer</h3>
-    <p>I am an Information Technology student 
-    from Tagum City who is passionate about 
-    both web design and development. I love 
-    creating beautiful and functional websites 
-    using Figma, HTML and CSS!</p>
-    <a href="contacts.html">
-      <button>Contact Me</button>
-    </a>
-  </div>
+      <div class="hero-text">
+        <h3>My Projects</h3>
+        <h1>Things I've Built</h1>
+        <h3>Web Design & Development</h3>
+        <p>Here are the projects I have worked on 
+        as I continue learning and growing 
+        as a web designer and developer!</p>
+      </div>
+      <div class="hero-image">
+        <img src="me.jpg" alt="Deign Marc">
+      </div>
+    </div>
 
-  <div class="hero-image">
-    <img src="me.jpg" alt="Deign Marc">
-  </div>
-</div>
-
-    <div class="cards-section">
+    <div class="cards-section fade-in">
+      <h2 class="section-title">My Projects</h2>
       <div class="cards-container">
-
         <div class="project-card">
           <h3>GetIntoPC Redesign</h3>
-          <p>Redesigned a software donwload website using Figma</p>
+          <p>Redesigned a software download website using Figma</p>
           <a href="getintopc.html">
-          <button>View Project</button>
+            <button>View Project</button>
           </a>
         </div>
-
         <div class="project-card">
           <h3>Church Website</h3>
-          <p>Currently building a website 
-          for our church — coming soon!</p>
+          <p>Currently building a website for our church — coming soon!</p>
           <button>Coming Soon</button>
         </div>
-
         <div class="project-card">
-          <h3>Coming Soon</h3>
-          <p>More projects on the way 
-          as I keep learning!</p>
+          <h3>More Projects</h3>
+          <p>More projects on the way as I keep learning!</p>
           <button>Stay Tuned</button>
         </div>
-
       </div>
+    </div>
+
+    <div style="text-align: center; padding: 20px;">
+      <a href="index.html">
+        <button>← Go Back to Home</button>
+      </a>
     </div>
 
     <div class="footer">
       <p>Footer - Made by Deign Marc M. Dela Torre</p>
     </div>
 
+    <script src="script.js"></script>
   </body>
 </html>
