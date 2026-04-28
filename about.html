@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <title>About Me</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  </head>
+  <body>
 
-     <div class="navbar">
-      <div class="navbar-logo">
-        ⛪ My Website
-      </div>
-      <div class="navbar-links">
+    <div class="navbar">
+      <div class="navbar-logo">⛪ My Website</div>
+      <button class="hamburger" id="hamburger">☰</button>
+      <div class="navbar-links" id="navLinks">
         <a href="index.html">Home</a>
         <a href="about.html" class="active">About</a>
         <a href="projects.html">Projects</a>
@@ -18,26 +17,42 @@
       </div>
     </div>
 
-     <div class="hero">
-      <h2>About Me</h2>
-      <p>Hi! I am Deign Marc — a student 
-      learning web design and development!</p>
+    <div class="hero">
+      <div class="hero-text">
+        <h3>About Me</h3>
+        <h1>Deign Marc M. Dela Torre</h1>
+        <h3>Aspiring Web Designer & Developer</h3>
+        <p>Hi! I am Deign Marc — an Information Technology 
+        student from Tagum City who loves web design 
+        and development!</p>
+      </div>
+      <div class="hero-image">
+        <img src="me.jpg" alt="Deign Marc">
+      </div>
     </div>
 
-    <div class="card">
+    <div class="card fade-in">
       <h2>My Skills</h2>
       <ul>
         <li>Figma — UI/UX Design</li>
         <li>HTML — Web Structure</li>
         <li>CSS — Web Styling</li>
-        <li>Basic Netwoking</li>
-        <li>Photo/Video editing</li>
+        <li>JavaScript — Web Interactivity</li>
+        <li>Basic Networking</li>
+        <li>Photo/Video Editing</li>
       </ul>
+    </div>
+
+    <div style="text-align: center; padding: 20px;">
+      <a href="index.html">
+        <button>← Go Back to Home</button>
+      </a>
     </div>
 
     <div class="footer">
       <p>Footer - Made by Deign Marc M. Dela Torre</p>
     </div>
-    
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>
