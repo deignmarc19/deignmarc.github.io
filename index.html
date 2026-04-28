@@ -3,15 +3,14 @@
   <head>
     <title>Deign Marc | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   </head>
-
   <body>
 
     <div class="navbar">
-      <div class="navbar-logo">
-        ⛪ My Website
-      </div>
-      <div class="navbar-links">
+      <div class="navbar-logo">⛪ My Website</div>
+      <button class="hamburger" id="hamburger">☰</button>
+      <div class="navbar-links" id="navLinks">
         <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
@@ -19,11 +18,10 @@
       </div>
     </div>
 
-    <!-- Hero Split Section -->
     <div class="hero">
       <div class="hero-text">
         <h3>Hello, I am</h3>
-        <h1>Deign Marc M. Dela Torre</h1>
+        <h1 id="myName">Deign Marc M. Dela Torre</h1>
         <h3>Aspiring Web Designer & Developer</h3>
         <p>I am an Information Technology student 
         from Tagum City who is passionate about 
@@ -34,14 +32,21 @@
           <button>Contact Me</button>
         </a>
       </div>
-
       <div class="hero-image">
         <img src="me.jpg" alt="Deign Marc">
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/DeignMarc" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/deignmarc/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
       </div>
     </div>
 
-    <!-- Hobbies Section -->
-    <div class="card">
+    <div class="card fade-in">
       <h2>My Hobbies</h2>
       <ul>
         <li>Designing websites</li>
@@ -51,67 +56,46 @@
       </ul>
     </div>
 
-    <!-- Projects Section -->
-    <div class="cards-section">
+    <div class="cards-section fade-in">
       <h2 class="section-title">My Projects</h2>
-
       <div class="cards-container">
-
         <div class="project-card">
           <h3>GetIntoPC Redesign</h3>
-          <p>Redesigned a software download 
-          website using Figma</p>
+          <p>Redesigned a software download website using Figma</p>
           <a href="getintopc.html">
             <button>View Project</button>
           </a>
         </div>
-
         <div class="project-card">
           <h3>Church Website</h3>
-          <p>Currently building a website 
-          for our church — coming soon!</p>
+          <p>Currently building a website for our church — coming soon!</p>
           <button>Coming Soon</button>
         </div>
-
         <div class="project-card">
           <h3>More Projects</h3>
-          <p>More projects on the way 
-          as I keep learning!</p>
+          <p>More projects on the way as I keep learning!</p>
           <button>Stay Tuned</button>
         </div>
-
       </div>
     </div>
 
-    <!-- Contact Section -->
-   <div class="contact">
+    <div class="contact fade-in">
       <h2>Contact Me</h2>
-
-      <!-- Only replace the form tag! -->
-      <form action="https://formspree.io/f/mqewonge" 
-      method="POST">
-
+      <form action="https://formspree.io/f/mqewonge" method="POST">
         <label>Your Name:</label><br>
-        <input type="text" name="name"
-        placeholder="Enter your name"><br><br>
-
+        <input type="text" name="name" placeholder="Enter your name"><br><br>
         <label>Your Email:</label><br>
-        <input type="email" name="email"
-        placeholder="Enter your email"><br><br>
-
+        <input type="email" name="email" placeholder="Enter your email"><br><br>
         <label>Your Message:</label><br>
-        <textarea name="message" 
-        placeholder="Write your message here"></textarea><br><br>
-
+        <textarea name="message" placeholder="Write your message here"></textarea><br><br>
         <button type="submit">Send Message</button>
-
       </form>
     </div>
 
-    <!-- Footer -->
     <div class="footer">
       <p>Footer - Made by Deign Marc M. Dela Torre</p>
     </div>
 
+    <script src="script.js"></script>
   </body>
 </html>
