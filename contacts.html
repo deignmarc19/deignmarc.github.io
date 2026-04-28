@@ -7,10 +7,9 @@
   <body>
 
     <div class="navbar">
-      <div class="navbar-logo">
-        ⛪ My Website
-      </div>
-      <div class="navbar-links">
+      <div class="navbar-logo">⛪ My Website</div>
+      <button class="hamburger" id="hamburger">☰</button>
+      <div class="navbar-links" id="navLinks">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
@@ -18,33 +17,29 @@
       </div>
     </div>
 
-    <div class="contact">
+    <div class="contact fade-in">
       <h2>Contact Me</h2>
-
-      <!-- Only replace the form tag! -->
-      <form action="https://formspree.io/f/mqewonge" 
-      method="POST">
-
+      <form action="https://formspree.io/f/mqewonge" method="POST">
         <label>Your Name:</label><br>
-        <input type="text" name="name"
-        placeholder="Enter your name"><br><br>
-
+        <input type="text" name="name" placeholder="Enter your name"><br><br>
         <label>Your Email:</label><br>
-        <input type="email" name="email"
-        placeholder="Enter your email"><br><br>
-
+        <input type="email" name="email" placeholder="Enter your email"><br><br>
         <label>Your Message:</label><br>
-        <textarea name="message" 
-        placeholder="Write your message here"></textarea><br><br>
-
+        <textarea name="message" placeholder="Write your message here"></textarea><br><br>
         <button type="submit">Send Message</button>
-
       </form>
+    </div>
+
+    <div style="text-align: center; padding: 20px;">
+      <a href="index.html">
+        <button>← Go Back to Home</button>
+      </a>
     </div>
 
     <div class="footer">
       <p>Footer - Made by Deign Marc M. Dela Torre</p>
     </div>
 
+    <script src="script.js"></script>
   </body>
 </html>
