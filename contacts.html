@@ -3,6 +3,8 @@
   <head>
     <title>Contact Me</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
   </head>
   <body>
 
@@ -17,17 +19,70 @@
       </div>
     </div>
 
-    <div class="contact fade-in">
-      <h2>Contact Me</h2>
-      <form action="https://formspree.io/f/mqewonge" method="POST">
-        <label>Your Name:</label><br>
-        <input type="text" name="name" placeholder="Enter your name"><br><br>
-        <label>Your Email:</label><br>
-        <input type="email" name="email" placeholder="Enter your email"><br><br>
-        <label>Your Message:</label><br>
-        <textarea name="message" placeholder="Write your message here"></textarea><br><br>
-        <button type="submit">Send Message</button>
-      </form>
+    <div class="contact-section fade-in">
+      <h2 class="section-title">Contact Me</h2>
+
+      <div class="contact-container">
+
+        <!-- Left Side — Info -->
+        <div class="contact-info">
+          <h3>Let's work together!</h3>
+          <p>Feel free to reach out to me for any 
+          project, collaboration, or just to say hi!</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <span>Tagum City, Davao del Norte</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">💼</span>
+              <span>Available for freelance work</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🌐</span>
+              <span>deignmarc19.github.io</span>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://www.facebook.com/DeignMarc" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/deignmarc/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/deignmarc19" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side — Form -->
+        <div class="contact-form">
+          <form action="https://formspree.io/f/mqewonge" method="POST">
+
+            <div class="form-group floating">
+              <input type="text" name="name" id="name" placeholder=" " required>
+              <label for="name">Your Name</label>
+            </div>
+
+            <div class="form-group floating">
+              <input type="email" name="email" id="email" placeholder=" " required>
+              <label for="email">Your Email</label>
+            </div>
+
+            <div class="form-group floating">
+              <textarea name="message" id="message" placeholder=" " required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+
+            <button type="submit">Send Message </button>
+
+          </form>
+        </div>
+
+      </div>
     </div>
 
     <div style="text-align: center; padding: 20px;">
