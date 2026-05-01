@@ -468,3 +468,8 @@ a:hover {
     button { width: 100%; }
     .project-card { width: 100%; }
 }
+
+
+body > div:not(.navbar):not(.footer) {
+    flex: 1;
+}
